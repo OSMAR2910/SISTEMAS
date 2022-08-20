@@ -1,0 +1,20 @@
+*{
+    font-family: 'Rubik', sans-serif;
+  }
+  body {
+    background-image: url("img/Fallas.jpg");
+  }
+  .img{
+    position: fixed;
+  }
+  h1 {
+    transition: all 0.5s;
+    color: #fff;
+    margin-top: 20%;
+  }
+  h1:hover {
+    color: #000;
+  }
+  a {
+    text-decoration: none;
+  }

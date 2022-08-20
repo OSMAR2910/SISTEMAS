@@ -1,0 +1,91 @@
+*{
+  font-family: 'Rubik', sans-serif;
+}
+body {
+  background-image: url("img/fondo.jpg");
+  background-repeat: no-repeat;
+  background-size: 10000%;
+}
+.caja1,
+.caja3,
+.caja5,
+.caja7,
+.caja9,
+.caja11,
+.caja13,
+.caja15,
+.caja17 {
+  width: 30vw;
+  height: 55vh;
+  background-color: red;
+  color: #fff;
+  font-size: 1.2vw;
+  padding: 2%;
+  margin-left: 10%;
+  margin-top: 5%;
+}
+.caja2,
+.caja4,
+.caja6,
+.caja8,
+.caja10,
+.caja12,
+.caja14,
+.caja16 {
+  width: 30vw;
+  height: 55vh;
+  background-color: red;
+  color: #fff;
+  font-size: 1.2vw;
+  padding: 2%;
+  margin-top: 5%;
+  margin-left: 50%;
+}
+.PIA {
+  color: #fff;
+  font-size: 2.5vw;
+}
+.img{
+  position: fixed;
+}
+@media screen and (max-width: 500px) { 
+  .caja1,
+  .caja3,
+  .caja5,
+  .caja7,
+  .caja9,
+  .caja11,
+  .caja13,
+  .caja15,
+  .caja17 {
+    width: 70vw;
+    height: 32vh;
+    background-color: red;
+    color: #fff;
+    font-size: 2.8vw;
+    padding: 2%;
+    margin-left: 5%;
+    margin-top: 5%;
+  }
+  .caja2,
+  .caja4,
+  .caja6,
+  .caja8,
+  .caja10,
+  .caja12,
+  .caja14,
+  .caja16 {
+    width: 70vw;
+    height: 32vh;
+    background-color: red;
+    color: #fff;
+    font-size: 2.8vw;
+    padding: 2%;
+    margin-top: 5%;
+    margin-left: 25%;
+  }
+  .PIA {
+    color: #fff;
+    font-size: 4vw;
+  }
+   }
