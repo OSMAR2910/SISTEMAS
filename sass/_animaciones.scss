@@ -1,0 +1,25 @@
+@keyframes preloader {
+  100% { transform: scale(2); }
+}
+@keyframes logo {
+    0% {
+        transform: translate(0, -100vh);
+    }
+    50% {
+        transform: translate(0, 3vh);
+    }
+    100% {
+        transform:translate(0, 0vh);
+    }
+}
+@keyframes logo_palpitar {
+    0% {
+        transform: scale(1.1);
+    }
+    50% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.1); 
+    }
+}

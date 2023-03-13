@@ -1,0 +1,53 @@
+@import "variables";
+body {  
+    header {
+        background-color: rgba(0, 0, 0, 0);
+        width: 100vw;
+        padding: 1%;
+        display: flex;
+        position: fixed;
+        margin-top: -22vh;
+        transition: all 0.3s;
+        z-index: 200;
+        a {
+            width: 3rem;
+            img {
+            width: 100%;
+            justify-content: flex-start;
+            }
+        }
+            ul {
+                width: 90%;
+                display: flex;
+                justify-content: flex-start;
+                nav {
+                    width: 50%;
+                    display: flex;
+                    justify-content: space-around;
+                    li {
+                        display: flex;
+                        align-items: center;
+                        list-style: none;
+                        a {
+                            display: flex;
+                            text-decoration: none;
+                            color: $Blanco;
+                            .icon {
+                                display: flex;
+                                font-size: 150%;
+                            }
+                            .icon_text {
+                                display: flex;
+                                align-items: center;
+                            }
+                        }
+                    }
+                }
+            }
+    }
+    header.abajo {
+        transition: all 0.3s;
+        background-color: $Secundario;
+        backdrop-filter: blur(20px);
+    }
+}
