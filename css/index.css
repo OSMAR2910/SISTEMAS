@@ -320,6 +320,7 @@ body #particles-js {
   width: 100vw;
   height: 100vh;
   position: fixed;
+  z-index: 0;
 }
 body section {
   scroll-margin-top: 10rem;
@@ -426,6 +427,7 @@ body #cmd #cont div {
 body footer {
   text-align: center;
   margin: 5%;
+  z-index: 2;
 }
 body footer a {
   display: flex;
@@ -436,6 +438,9 @@ body footer a {
 }
 body footer a .icon {
   font-size: 150%;
+}
+body footer:hover a {
+  color: rgba(255, 255, 255, 0.2470588235);
 }
 
 @media screen and (max-width: 500px) {
