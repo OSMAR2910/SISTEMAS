@@ -6,7 +6,7 @@ body {
         padding: 1%;
         display: flex;
         position: fixed;
-        margin-top: -22vh;
+        margin-top: -21vh;
         transition: all 0.3s;
         z-index: 200;
         a {
@@ -16,11 +16,11 @@ body {
             justify-content: flex-start;
             }
         }
-            ul {
+            .active1 {
                 width: 90%;
                 display: flex;
                 justify-content: flex-start;
-                nav {
+                ul {
                     width: 50%;
                     display: flex;
                     justify-content: space-around;
@@ -44,10 +44,83 @@ body {
                     }
                 }
             }
+            .active2 {
+                opacity: 0;
+                width: 0;
+                height: 0;
+                font-size: 0;
+                .navbar-brand {
+                    margin-top:0;
+                    margin-left:0;
+                    width: 0;
+                    z-index: -100;
+                    img {
+                        width: 0;
+                    }
+                }
+            }
     }
     header.abajo {
         transition: all 0.3s;
         background-color: $Secundario;
         backdrop-filter: blur(20px);
+    }
+}
+@media screen and (max-width: 500px) {
+    body {
+        header {
+            background-color: rgba(0, 0, 0, 0);
+            width: 100vw;
+            height: 8vh;
+            margin-top: -14vh;
+            padding: 0;
+            position: fixed;
+            transition: all 0.5s;
+            opacity: 100%;
+            z-index: 100;
+            a {
+                width: 0rem;
+                img {
+                width: 0%;
+                }
+            }
+            .active1 {
+                width: 0%;
+                ul {
+                    width: 0%;
+                    li {
+                        a {
+                            font-size: 0;
+                            .icon {
+                                font-size: 0%;
+                            }
+                        }
+                    }
+                }
+            }
+            .active2 {
+                opacity: 100%;
+                width: 100%;
+                height: 100%;
+                font-size: 100%;
+                background-color: $Transparente !important;
+                .navbar-brand {
+                    margin-top: -2%;
+                    margin-left: 0%;
+                    width: 13%;
+                    z-index: 10;
+                    img {
+                        width: 100%;
+                    }
+                }
+                .navbar-toggler {
+                    margin-top: -2%;
+                    background-color: $Secundario;
+                }
+            }
+        }
+        header.abajo {
+            background-color: $Secundario;
+        }
     }
 }
