@@ -14,7 +14,7 @@ body {
         width: 100vw;
         height: 100vh;
         position: fixed;
-        z-index: 0;
+        z-index: -1;
     }
     background-color: #30cfd0;
     background-image: $Primario;
@@ -35,8 +35,11 @@ body {
         flex-direction: column;
         backdrop-filter: blur(60px);
         box-shadow: 0px 0px 5px 0px rgba(255, 255, 255, 0.608);
-        border-radius: 3%;
+        border-radius: 6%;
         z-index: 1;
+        #cont {
+            border-radius: 5%;
+        }
     }
     #wxp {
         margin-top: 10%;
@@ -46,7 +49,6 @@ body {
             flex-direction: column;
             text-align: center;
             div {
-                background-color: $Blanco;
                 width: 100%;
                 height: 100%;
                 color: $Blanco;
@@ -64,7 +66,6 @@ body {
             flex-direction: column;
             text-align: center;
             div {
-                background-color: $Blanco;
                 width: 100%;
                 height: 100%;
                 color: $Blanco;
@@ -82,7 +83,6 @@ body {
             flex-direction: column;
             text-align: center;
             div {
-                background-color: $Blanco;
                 width: 100%;
                 height: 100%;
                 color: $Blanco;
@@ -137,7 +137,7 @@ body {
     footer {
       text-align: center;
       margin: 5%;
-        z-index: 2;
+      z-index: 5;
       a {
         display: flex;
         justify-content: center;
